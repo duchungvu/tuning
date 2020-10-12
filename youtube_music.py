@@ -66,8 +66,6 @@ def get_playlist_info(playlist):
 
 def import_playlist(playlist):
     title, video_ids = get_playlist_info(playlist)
-    print(title)
-    print(video_ids)
     print("Creating playlist: {}, with {} songs...".format(title, len(video_ids)))
     res = ytmusic.create_playlist(title, description="", video_ids=video_ids)
     print("Created playlist: {}, with {} songs.".format(title, len(video_ids)))
@@ -76,8 +74,8 @@ def import_playlist(playlist):
 
 def import_all_playlists():
     playlists = sp.current_user_playlists()
-    playlist = playlists['items'][0]
-    import_playlist(playlist)
+    # playlist = playlists['items'][0]
+    # import_playlist(playlist)
     for playlist in playlists['items']:
         import_playlist(playlist)
 
