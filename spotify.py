@@ -11,6 +11,10 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth())
 
 
 def export_all_playlists():
+    """
+    Get all Spotify playlists and convert them to standard playlist model
+    :return: A list of available playlists
+    """
     playlists = []
     spotify_playlists = sp.current_user_playlists()
 
@@ -25,14 +29,29 @@ def export_all_playlists():
 
 
 def add(playlist, song):
+    """
+    Add a song to the playlist
+    :param playlist: The playlist to be added
+    :param song: The song to be added
+    """
     pass
 
 
 def remove(playlist, song):
+    """
+    Remove a song from the playlist
+    :param playlist: The playlist to be removed
+    :param song: The song to be removed
+    """
     pass
 
 
 def get_songs(uri):
+    """
+    Get all songs from a specific playlist and convert them to standard song model
+    :param uri: The URL of the playlist
+    :return: A list of the songs in the playlist
+    """
     songs = []
 
     offset = 0
