@@ -22,7 +22,7 @@ def export_all_playlists():
         title = spotify_playlist['name']
         uri = spotify_playlist['uri']
         songs = get_songs(uri)
-        print(title, len(songs))
+        # print(title, len(songs))
         playlists.append(Playlist(title, songs))
 
     return playlists
@@ -63,6 +63,8 @@ def get_songs(uri):
             offset += 1
             title = track['track']['name']
             artists = []
+            if title == "":
+                continue
             for artist in track['track']['artists']:
                 artists.append(artist['name'])
             songs.append(Song(title, artists))
@@ -72,6 +74,3 @@ def get_songs(uri):
         total_tracks += len(playlist_tracks['items'])
 
     return songs
-
-
-export_all_playlists()

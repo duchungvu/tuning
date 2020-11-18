@@ -27,3 +27,6 @@ class Playlist:
 
     def get_songs(self):
         return self._songs
+
+    def __str__(self):
+        return "{} - {}".format(self._title, len(self._songs))
