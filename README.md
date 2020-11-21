@@ -1,6 +1,6 @@
 # [tuning](https://github.com/duchungvu/tuning) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/duchungvu/tuning/blob/master/LICENSE) 
 
-Tools for popular music streaming platform:
+Tools for popular music streaming platforms:
 - [Spotify](https://www.spotify.com/)
 - [YouTube Music](https://music.youtube.com/)
 - [Apple Music](https://music.apple.com/) (WIP)
