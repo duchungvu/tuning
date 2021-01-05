@@ -16,7 +16,7 @@ Tools for popular music streaming platforms:
 - Clone this project into your local machine:
 ```
 git clone https://github.com/duchungvu/tuning.git
-cd servex
+cd tuning
 ```
 - Create a virtual environment and install dependencies
 ```
